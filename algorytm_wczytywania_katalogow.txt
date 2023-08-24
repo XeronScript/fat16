@@ -1,0 +1,20 @@
+while i < dirs.len() do
+	check if (dirs[i] is in curr_dir)
+	if yes: read dirs[i] cluster to temp variable
+	if no: return
+end while
+
+chcek if dirs[dirs.len()-1] is in curr_dir
+if yes: read dirs[dirs.len()-1] and save file entry 
+
+
+
+1. przechodzimy po każdym podkatalogu
+2. sprawdzamy czy sprawdzany katalog istnieje (w obecnej ścieżce)
+	2.a. jeśli istnieje, wczytaj jego klaster i kontynuuj pętle sprawdzania
+		podkatalogów
+	2.b. jeśli nie istnieje, zakończ funkcję
+3. gdy skończyliśmy pętlę sprawdzania podkatalogów, sprawdzamy czy w ostatnim katalogu
+	ścieżki, znajduję się oczekiwany plik
+	3.a. jeżeli tak, to go wczytaj
+	3.b jeżeli nie, to wiadomo co, wiadomo kogo
